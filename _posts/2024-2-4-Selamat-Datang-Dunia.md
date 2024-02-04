@@ -4,9 +4,9 @@
 
 ## Selamat Datang Dunia!
 <p>jangan karena teknologi semakin canggih kita lupa mencatat perjalanan kita. selain menjadi bahan bacaan bagi pembacanya, catatan ini menjadi bahan praktik bagi pelajar yang ingin memraktikkan teori tertentu terkait dengan sesuatu yang bersifat digital.</p>
-<p> Oh iya, hampir lupa. Selamat datang dunia! seperti ucapan bayi yang baru lahir. memulai aktivitas kegiatan dengan mengucap salam hangat kepada orang tuanya. sebuah program yang memulai aktivitasnya dengan mengucapkan salam kepada pengembangnya, berharap akan menjadi sesuatu yang berguna bagi orang lain.
+<p> Oh iya, hampir lupa. Selamat datang dunia! seperti ucapan bayi yang baru lahir. memulai aktivitas kegiatan dengan mengucap salam hangat kepada orang tuanya. sebuah program yang memulai aktivitasnya dengan mengucapkan salam kepada pengembangnya, berharap akan menjadi sesuatu yang berguna bagi orang lain.</p>
 
 ## Epilog
-<p>Perlahan namun pasti, catatan singkat ini akan berubah menjadi kumpulan catatan yang bermanfaat bagi para pembacanya.
+<p>Perlahan namun pasti, catatan singkat ini akan berubah menjadi kumpulan catatan yang bermanfaat bagi para pembacanya.</p>
 
 Salam.
