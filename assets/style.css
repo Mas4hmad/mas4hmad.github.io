@@ -141,7 +141,7 @@ img {
 }
 
 code {
-    font-family: monospace;
+    font-family: 'Ubuntu Mono', monospace;
     padding: 2px;
     background-color: #f2f2f2;
     color: #222;
@@ -312,6 +312,9 @@ ul.discover-posts li small a {
 
     .helptext {
         color: #aaa;
+    }
+    pre, pre code {
+       background-color: #17303f;
     }
 }
 

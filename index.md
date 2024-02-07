@@ -1,24 +1,17 @@
 ---
 layout: default
-title: Hello
+title: Laman Awal
 ---
 
 
-## An easy to use, minimal, text focused Jekyll theme
+## Halaman awal pengunjung
 
-[Bear Blog](https://bearblog.dev/) is *"a blogging platform where words matter most"*. 
+Halaman ini berisi catatan perjalanan rekam jejak digital secara pribadi dan dirangkum sedemikian rupa agar bisa dibaca dengan nyaman. bisa berupa:
 
-This is a port of it's theme to Jekyll, with some tweaks. So you can use GitHub Pages to host your blog while getting the same awesome Bear Blog feels.
+- Peninjauan ulang atas percobaan sistem operasi selain Windows dan MacOs (Hackintosh, Linux, FreeBSD, Haiku, Kolibri, dll)
+- Rangkuman pemahaman terhadap teknologi atau piranti lunak tertentu (FOSS dan sekelompoknya)
+- Catatan ringan sebagai rujukan untuk perekaman selanjutnya
 
-**Stop worrying about the style, focus on your writing.**
+Halaman ini menggunakan format 'blog' sebagai catatan dengan menyematkan waktu penulisan dan beberapa gambar agar nanti dapat dipelajari dengan mudah.
 
-- Looks great on *any* device
-- Tiny, optimized, and awesome pages
-- No trackers, ads, or scripts, *did I mention minimal already?*
-- Auto light and dark themes
-- Tag support, to filter blog pages
-- Quick, *15 minute* setup
-- Gallery view for your images
-- Code highlighting
-
-Have a look around, this website is already themed with **jekyllBear**. If you like it, head over to the GitHub [repository](https://github.com/knhash/jekyllBear) for installation instructions.
+Situs ini menggunakan Jekyll-Now dengan Github.io sebagai host. tema yang digunakan adalah jekyllBear yang dirasa sangat simpel dan bertujuan menampilkan teks tanpa gangguan elemen lain yang tidak dirasa perlu untuk ditampilkan.
