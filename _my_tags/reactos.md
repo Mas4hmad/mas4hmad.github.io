@@ -1,4 +1,4 @@
 ---
 slug: reactos
-name: Reactos
+name: ReactOS
 ---

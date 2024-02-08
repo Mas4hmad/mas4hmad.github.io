@@ -313,7 +313,7 @@ ul.discover-posts li small a {
     .helptext {
         color: #aaa;
     }
-    pre, pre code {
+    .highlight, pre, pre code {
        background-color: #17303f;
     }
 }
