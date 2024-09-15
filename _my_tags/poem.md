@@ -1,4 +1,4 @@
 ---
 slug: poem
-name: Poem
+name: Puisi
 ---

@@ -1,4 +1,4 @@
 ---
 slug: fiction
-name: Fiction
+name: Fiksi
 ---

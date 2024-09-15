@@ -1,4 +1,4 @@
 ---
 slug: design
-name: Design
+name: Desain
 ---
