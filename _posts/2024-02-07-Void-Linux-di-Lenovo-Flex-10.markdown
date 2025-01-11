@@ -2,10 +2,7 @@
 layout: post
 Title: "Menggunakan sistem operasi Void Linux sebagai alternatif untuk Windows dan MacOs."
 date:   2022-02-20 00:20:21 +0700
-tags:
-- linux
-- general
-- Experiment
+categories: [linux,general,experiment]
 ---
 
 Pertumbuhan dan perkembangan teknologi dapat dirasakan oleh manusia, baik didapatkan secara gratis maupun berbayar. Sangat banyak pemeran yang terlibat seperti Microsoft, Apple, Sony, Lenovo, Huawei, Google, Adobe, Oracle, Linux Foundation, dan lain-lain. 

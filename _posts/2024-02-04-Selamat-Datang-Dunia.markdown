@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Selamat Datang Dunia!
+title: "Selamat Datang Dunia!"
 date: 2024-02-04 18:30:00 +0000
-categories:
-- general
-- indonesian
+categories:[general,indonesian]
 ---
 
 ## Perjalanan Awal

@@ -2,9 +2,7 @@
 layout: post
 Title: "Pandangan Umum Orang Terhadap ReactOS"
 date:   2024-09-16 15:20:21 +0700
-tags:
-- reactos
-- operating_system
+categories:[reactos,operating system]
 ---
 
 
