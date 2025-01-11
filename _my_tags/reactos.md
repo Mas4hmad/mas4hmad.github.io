@@ -1,4 +1,0 @@
----
-slug: reactos
-name: ReactOS
----

@@ -1,4 +1,0 @@
----
-slug: design
-name: Desain
----

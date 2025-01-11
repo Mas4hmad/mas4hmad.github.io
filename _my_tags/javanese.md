@@ -1,4 +1,0 @@
----
-slug: javanese
-name: Jawa
----

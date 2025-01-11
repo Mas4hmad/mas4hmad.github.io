@@ -1,4 +1,0 @@
----
-slug: indonesian
-name: Indonesia
----

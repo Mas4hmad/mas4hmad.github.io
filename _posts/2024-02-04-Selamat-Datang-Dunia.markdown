@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Selamat Datang Dunia!
-subtitle: Lahir dengan selamat menuju kehidupan baru!
 date: 2024-02-04 18:30:00 +0000
-tags:
+categories:
 - general
 - indonesian
 ---
