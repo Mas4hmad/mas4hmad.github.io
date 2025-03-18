@@ -1,32 +1,49 @@
 ---
 layout: default
 ---
-<button onclick="history.back()">Back to Blog</button>
-<article class="card" itemscope itemtype="http://schema.org/BlogPosting">
+<button class="ui button" onclick="history.back()">Back to Blog</button>
 
-  <header class="post-header">
-    <h3 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h3>
+<article class="ui raised card fluid" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="content">
+    <header class="post-header">
+      <h3 class="ui header post-title p-name" itemprop="name headline">{{ page.title | escape }}</h3>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
-  </header>
-  <footer class="post-meta">
-  <div class="post-meta" style="display: flex;justify-content: space-between;">
-    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {{ page.date | date: date_format }}
-    </time>
-    {% if page.tags.size > 0 %}
-    Tags: 
-    {% for tag in page.tags %}
-      {{ tag }}{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-  {% endif %}</div>
-  {{ content }}
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+        <span class="meta">
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+          </span>
+        </span>
+      {%- endif -%}
+    </header>
+
+    <footer class="post-meta">
+      <div class="meta" style="display: flex; justify-content: space-between;">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+
+        {% if page.tags.size > 0 %}
+        <div class="ui labels">
+          <span>Tags:</span>
+          {% for tag in page.tags %}
+            <span class="ui label">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="ui label"><i class="info circle icon" style="padding-right: .5em;"></i>Tag Kosong</div>
+        {% endif %}
+      </div>
+    </footer>
+
+    <div class="description">
+      {{ content }}
+    </div>
+
+    {%- if site.disqus.shortname -%}
+      {%- include disqus_comments.html -%}
+    {%- endif -%}
+  </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</footer>
 </article>
