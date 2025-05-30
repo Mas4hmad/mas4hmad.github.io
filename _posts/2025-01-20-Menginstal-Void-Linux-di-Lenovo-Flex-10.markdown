@@ -34,7 +34,7 @@ Setelah itu dan mereboot laptop, saya menginstall program yang dibutuhkan dengan
 
 Agar bisa mendapatkan mscorefonts, selain kita menginstall `void-repo-nonfree`, kita juga perlu membuat perintah terminal seperti ini:
 
-```
+```git
 git clone https://github.com/void-linux/void-packages
 cd void-packages
 ./xbps-src binary-bootstrap
