@@ -1,7 +1,7 @@
 ---
 layout: post
 Title: "Bereksperimen dengan Haiku di Lenovo Flex 10"
-date:   2025-01-30 15:20:21 +0700
+date:   2025-01-28 15:20:21 +0700
 tags: [haikuOS,general,experiment]
 ---
 

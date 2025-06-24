@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Menginstal Ubuntu di Lenovo Flex 10"
-date: 2025-01-20 00:00:00 +0000
+date: 2025-05-24 00:00:00 +0000
 tags: [linux,operating system,experiment]
 ---
 

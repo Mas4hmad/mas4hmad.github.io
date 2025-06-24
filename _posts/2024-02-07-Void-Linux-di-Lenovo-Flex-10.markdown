@@ -13,7 +13,7 @@ Mesin yang akan digunakan yakni Lenovo IdeaPad Flex 10, perangkat yang dirilis L
 
 Untuk sistem operasi, Lenovo Flex 10 dibekali Windows 8® 64-bit dengan UEFI 32-bit (yakni dengan CPU Intel Celeron keluarga Bay-Trail). Konfigurasi menjadikannya OS Terbuka (misal ReactOS, Linux, Haiku, *BSD) sangat sulit karena adaptasi UEFI yang tersedia terdapat pada beberapa OS saja.
 
-Untuk saat ini, Lenovo Flex 10 bisa memuat Sistem Operasi Haiku (32-bit), OpenBSD (firmware belum didukung), linux seperti Void Linux, PostmarketOS (dengan menggunakan image 32-bit uefi generic tablet), Debian dan Debian-based seperti Zorin, MX, Arch(?) dan Arch-Based seperti Manjaro dan Artix, selain itu ada Ubuntu (dengan konfigurasi tertentu yang dibuat oleh [RkBlog](https://rkblog.dev/posts/pc-hardware/how-cool-lenovo-flex-10-netbook-and-how-install-linux-32-bit-uefi-system/)).
+Untuk saat ini, Lenovo Flex 10 bisa memuat Sistem Operasi Haiku (32-bit), OpenBSD (firmware belum didukung), linux seperti Void Linux, PostmarketOS (dengan menggunakan image 32-bit uefi generic tablet), Debian dan Debian-based seperti Zorin, MX, Arch(?) dan Arch-Based seperti Manjaro dan Artix, selain itu ada Ubuntu (dengan konfigurasi tertentu yang dibuat oleh [RkBlog](https://rkblog.dev/posts/pc-hardware/how-cool-lenovo-flex-10-netbook-and-how-install-linux-32-bit-uefi-system/)) yang penginstalannya bisa dilihat [di sini](https://https://mas4hmad.github.io/2025/01/20/Menginstal-Ubuntu-di-Lenovo-Flex-10/).
 
 Terima Kasih kepada [Ventoy](https://www.ventoy.net/en/index.html) yang menyediakan utilitas UEFI untuk mendukung boot pada OS Terbuka, salah satunya dukungan OS 64-bit yang di-booting dengan 32-bit UEFI. Hal ini didukung untuk memuat Arch-based OS seperti Manjaro dan Artix.
 
