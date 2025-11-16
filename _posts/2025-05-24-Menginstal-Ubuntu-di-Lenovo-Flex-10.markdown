@@ -38,10 +38,13 @@ sudo update-grub
 ```
 
 b. membuka terminal untuk mengganti uefi GRUB 64 ke 32 bit dari paket apt:
-- 
+- ketik ```sudo apt-get update``` untuk memperbarui daftar paket.
+- ketik ```sudo apt-get remove grub-efi-amd64``` untuk menghapus GRUB 64 bit. gunakan flag ```--force-remove``` jika ada peringatan tidak bisa dihapus.
+- ketik ```sudo apt-get install grub-efi-ia32``` untuk menginstal GRUB 32 bit.
 
 <b>Ingat!</b> ketik perintah di atas dengan hati-hati, kalau bisa satu baris untuk satu perintah.karena ini akan mengubah bootloader GRUB yang sudah ada dan akan terjadi kesalahan jika perintah tidak sesuai.
 
+Sekarang, ketika anda memulai ulang tanpa menggunakan usb, anda bisa melihat Ubuntu boot di lenovo flex 10.
 ### Kesimpulan
 
 Ubuntu merupakan sistem operasi yang sangat mudah digunakan, namun tidak mendukung UEFI 32 bit yang dibutuhkan Lenovo Flex 10. Jika anda ingin menginstal Ubuntu di Lenovo Flex 10, maka anda harus menggunakan UEFI 64 bit.

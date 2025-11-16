@@ -1,49 +1,48 @@
 ---
 layout: default
 ---
-<button class="ui button" onclick="history.back()">Back to Blog</button>
 
-<article class="ui raised card fluid" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="content">
-    <header class="post-header">
-      <h3 class="ui header post-title p-name" itemprop="name headline">{{ page.title | escape }}</h3>
-      {%- if page.author -%}
-        <span class="meta">
-          • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
-          </span>
-        </span>
-      {%- endif -%}
-    </header>
+<div class="ui container" style="margin-top: 3em; margin-bottom: 3em;">
 
-    <footer class="post-meta">
-      <div class="meta" style="display: flex; justify-content: space-between;">
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  <div class="ui raised card fluid" style="">
+    <div class="content">
+
+      <!-- Judul -->
+      <h1 class="ui header" style="margin-bottom: 0.5em;">
+        {{ page.title | escape }}
+      </h1>
+
+      <!-- Tanggal -->
+      <div class="meta" style="margin-bottom: 1em;">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="date">
+          <i class="calendar icon"></i>
           {{ page.date | date: date_format }}
-        </time>
-
-        {% if page.tags.size > 0 %}
-        <div class="ui labels">
-          <span>Tags:</span>
-          {% for tag in page.tags %}
-            <span class="ui label">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% else %}
-        <div class="ui label"><i class="info circle icon" style="padding-right: .5em;"></i>Tag Kosong</div>
-        {% endif %}
+        </span>
       </div>
-    </footer>
 
-    <div class="description">
-      {{ content }}
+      <!-- Tags -->
+      {%- if page.tags and page.tags.size > 0 -%}
+      <div class="meta" style="margin-bottom: 1em;">
+        <span style="margin-right: 0.5em;"><strong>Tags:</strong></span>
+        {%- for tag in page.tags -%}
+          <span class="ui label">{{ tag }}</span>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+
+      <!-- Isi Konten -->
+      <div class="description" style="font-size: 1.15em; line-height: 1.7;">
+        {{ content }}
+      </div>
+
     </div>
 
-    {%- if site.disqus.shortname -%}
-      {%- include disqus_comments.html -%}
-    {%- endif -%}
-  </div>
+    <div class="extra content">
+      <a href="{{ '/' | relative_url }}" class="ui basic button">
+        <i class="arrow left icon"></i> Kembali
+      </a>
+    </div>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+  </div>
+</div>

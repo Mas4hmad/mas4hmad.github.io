@@ -1,0 +1,18 @@
+/* sembunyikan hamburger di layar besar */
+.mobile-only {
+  display: none !important;
+}
+
+/* sembunyikan menu kanan normal di layar kecil */
+.desktop-only {
+  display: flex !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-only {
+    display: block !important;
+  }
+  .desktop-only {
+    display: none !important;
+  }
+}
