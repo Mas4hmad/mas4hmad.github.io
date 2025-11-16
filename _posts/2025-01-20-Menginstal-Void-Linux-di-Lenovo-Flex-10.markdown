@@ -30,6 +30,18 @@ setelah semuanya dirasa beres saya memilih install dan menunggu proses instalasi
 
 Saya menggunakan program `# xbps-install -Su` untuk memperbarui program yang telah terinstal. tetapi ada masalah muncul yakni harus menggunakan `# xbps-install -Su xbps` untuk memperbarui program xbps sebagai penginstal khas dari Void Linux.
 
+untuk sistem login, saya pertama menginstal elogind dan mengaktifkannya seperti ini:
+
+- `# xbps-install -S elogind dbus tlp`
+- `# nano /etc/logind.conf`, set all Handle* keywords to ignore.
+- `# ln -s /etc/sv/elogind /var/service`
+- `# ln -s /etc/sv/acpid /var/service`
+- `# ln -s /etc/sv/tlp /var/service`
+
+
+untuk DE kita gunakan GNOME seperti [di sini](https://dev.to/nerdyslacker/void-linux-gnome--4p3j).
+
+
 Setelah itu dan mereboot laptop, saya menginstall program yang dibutuhkan dengan tampilan grafis yang memudahkan pengguna dengan menggunakan program `# xbps-install -S octo-xbps`. Octo-xbps adalah program yang memungkinkan pengguna untuk menginstal program dengan tampilan grafis. selain itu saya juga menginstal repo non-free dengan program `# xbps-install -S void-repo-nonfree git firefox libreoffice nano`.
 
 Agar bisa mendapatkan mscorefonts, selain kita menginstall `void-repo-nonfree`, kita juga perlu membuat perintah terminal seperti ini:

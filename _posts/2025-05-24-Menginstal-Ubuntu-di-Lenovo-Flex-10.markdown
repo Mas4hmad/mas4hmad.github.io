@@ -18,10 +18,14 @@ Saat ini kita akan menginstal Ubuntu di Lenovo Flex 10. butuh pengaturan khusus 
 3. ketika telah mencapai shell UEFI, ketik ```linux (hd*,msdos*)/boot/vmlinuz* root=/dev/sd**``` yang merupakan path dari file vmlinuz. ganti angka bintang sesuai dengan path yang kalian temukan pada vmlinuz.
 4. selanjutnya, ketik ```initrd (hd*,msdos*)/boot/initrd*``` yang merupakan path dari file initrd. ganti angka bintang sesuai dengan path yang kalian temukan pada initrd.
 5. selanjutnya, ketik ```boot``` untuk memulai Ubuntu dan membuka terminal/command prompt linux.
-6. ketika terminal telah terbuka, ketik ```sudo apt-get update && sudo apt-get install git bison libopts25 libselinux1-dev autogen m4 autoconf help2man libopts25-dev flex libfont-freetype-perl automake autotools-dev libfreetype6-dev texinfo``` untuk menginstal dependensi yang dibutuhkan.
-7. ketik ```git clone git://git.savannah.gnu.org/grub.git``` untuk mengunduh bootloader GRUB.
-8. selanjutnya, ketik ```cd grub``` untuk mengubah direktori ke grub.
-9. kemudian ketik perintah di bawah untuk eksekusinya, seperti ini:
+6. Setelah sampai pada desktop dan membuka terminal, ada dua cara untuk menginstal GRUB khusus pada uefi 32 bit, yakni:
+
+a. membuka terminal untuk mengunduh bootloader GRUB dari git:
+
+-  ketika terminal telah terbuka, ketik ```sudo apt-get update && sudo apt-get install git bison libopts25 libselinux1-dev autogen m4 autoconf help2man libopts25-dev flex libfont-freetype-perl automake autotools-dev libfreetype6-dev texinfo``` untuk menginstal dependensi yang dibutuhkan.
+- ketik ```git clone git://git.savannah.gnu.org/grub.git``` untuk mengunduh bootloader GRUB.
+- selanjutnya, ketik ```cd grub``` untuk mengubah direktori ke grub.
+- kemudian ketik perintah di bawah untuk eksekusinya, seperti ini:
 ```shell
 ./autogen.sh
 ./configure --with-platform=efi --target=i386 --program-prefix=""
@@ -32,6 +36,10 @@ cd /boot/efi/EFI
 sudo cp grub/grubia32.efi ubuntu/grubx64.efi
 sudo update-grub
 ```
+
+b. membuka terminal untuk mengganti uefi GRUB 64 ke 32 bit dari paket apt:
+- 
+
 <b>Ingat!</b> ketik perintah di atas dengan hati-hati, kalau bisa satu baris untuk satu perintah.karena ini akan mengubah bootloader GRUB yang sudah ada dan akan terjadi kesalahan jika perintah tidak sesuai.
 
 ### Kesimpulan
