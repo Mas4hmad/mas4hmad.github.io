@@ -35,3 +35,7 @@ gem "jekyll-paginate"
 gem "csv"
 
 gem "base64"
+
+gem "minima", "~> 2.5"
+
+gem "logger"

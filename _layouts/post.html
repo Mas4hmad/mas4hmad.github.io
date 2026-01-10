@@ -4,7 +4,7 @@ layout: default
 
 <div class="ui container" style="margin-top: 3em; margin-bottom: 3em;">
 
-  <div class="ui raised card fluid" style="">
+  <div class="ui raised card fluid">
     <div class="content">
 
       <!-- Judul -->
@@ -32,14 +32,14 @@ layout: default
       {%- endif -%}
 
       <!-- Isi Konten -->
-      <div class="description" style="font-size: 1.15em; line-height: 1.7;">
+      <div style="font-size: 1.15em; line-height: 1.7;">
         {{ content }}
       </div>
 
     </div>
 
     <div class="extra content">
-      <a href="{{ '/' | relative_url }}" class="ui basic button">
+      <a href="{{ '/blog/' | relative_url }}" class="ui basic button">
         <i class="arrow left icon"></i> Kembali
       </a>
     </div>

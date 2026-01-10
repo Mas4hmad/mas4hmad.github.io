@@ -40,37 +40,43 @@ Berdasarkan pengalaman penggila komputer, berikut adalah beberapa aspek yang mer
 
 Secara keseluruhan, pengalaman menggunakan ReactOS bagi penggila komputer lebih pada eksplorasi, pengujian, dan kontribusi dalam membangun sesuatu yang kompatibel dengan Windows, tetapi tetap berada di jalur open source. Bagi mereka, ini adalah kesempatan langka untuk terlibat langsung dalam pengembangan sistem operasi.
 
-
 Menginstal **ReactOS** di **virtual machine (VM)** berbasis Windows memberikan pengalaman yang unik bagi para penggila komputer. Berikut adalah beberapa tahapan dan pengalaman yang sering dialami:
 
 ### 1. **Persiapan dan Konfigurasi VM**
-   - **Memilih VM Software**: Pengguna biasanya menggunakan software virtualisasi populer seperti **VirtualBox** atau **VMware**. Keduanya mendukung instalasi ReactOS, meskipun **VirtualBox** lebih umum digunakan karena gratis dan kompatibel.
-   - **Konfigurasi Hardware Virtual**: Saat membuat VM untuk ReactOS, pengguna disarankan untuk menetapkan konfigurasi hardware minimal. ReactOS tidak memerlukan spesifikasi tinggi, sehingga pengaturan **RAM 512 MB** dan **penyimpanan sekitar 500 MB hingga 2 GB** sudah cukup.
-   - **ISO ReactOS**: Mengunduh **ISO ReactOS** dari situs resmi adalah langkah pertama. Biasanya, penggila komputer memilih versi **daily build** atau **alpha release** terbaru untuk mendapatkan fitur dan perbaikan terbaru.
+
+* **Memilih VM Software**: Pengguna biasanya menggunakan software virtualisasi populer seperti **VirtualBox** atau **VMware**. Keduanya mendukung instalasi ReactOS, meskipun **VirtualBox** lebih umum digunakan karena gratis dan kompatibel.
+* **Konfigurasi Hardware Virtual**: Saat membuat VM untuk ReactOS, pengguna disarankan untuk menetapkan konfigurasi hardware minimal. ReactOS tidak memerlukan spesifikasi tinggi, sehingga pengaturan **RAM 512 MB** dan **penyimpanan sekitar 500 MB hingga 2 GB** sudah cukup.
+* **ISO ReactOS**: Mengunduh **ISO ReactOS** dari situs resmi adalah langkah pertama. Biasanya, penggila komputer memilih versi **daily build** atau **alpha release** terbaru untuk mendapatkan fitur dan perbaikan terbaru.
 
 ### 2. **Proses Instalasi**
-   - **Booting dari ISO**: Setelah VM dikonfigurasi, ReactOS di-boot dari file ISO. Pengalaman awal ini sering kali berjalan mulus, karena instalasi ReactOS sederhana dan mirip dengan proses instalasi Windows versi lama, seperti Windows 95 atau 2000.
-   - **Tampilan Sederhana**: Saat instalasi, pengguna akan disambut dengan antarmuka **GUI yang sangat minimalis**, memberikan pengalaman nostalgia. Banyak penggila komputer merasa terkesan dengan kesederhanaan dan kesan retro dari installer ini.
-   - **Proses Instalasi Cepat**: Instalasi ReactOS biasanya cukup cepat karena ukuran sistem yang kecil. Dalam waktu singkat, pengguna dapat melihat ReactOS diinstal di VM mereka.
+
+* **Booting dari ISO**: Setelah VM dikonfigurasi, ReactOS di-boot dari file ISO. Pengalaman awal ini sering kali berjalan mulus, karena instalasi ReactOS sederhana dan mirip dengan proses instalasi Windows versi lama, seperti Windows 95 atau 2000.
+* **Tampilan Sederhana**: Saat instalasi, pengguna akan disambut dengan antarmuka **GUI yang sangat minimalis**, memberikan pengalaman nostalgia. Banyak penggila komputer merasa terkesan dengan kesederhanaan dan kesan retro dari installer ini.
+* **Proses Instalasi Cepat**: Instalasi ReactOS biasanya cukup cepat karena ukuran sistem yang kecil. Dalam waktu singkat, pengguna dapat melihat ReactOS diinstal di VM mereka.
 
 ### 3. **Pengalaman Pasca-Instalasi**
-   - **Booting ke Sistem**: Setelah instalasi selesai, ReactOS biasanya langsung bisa di-boot. Namun, penggila komputer kadang-kadang menemukan **bug kecil atau error** yang mengharuskan mereka untuk melakukan restart VM atau tweak tambahan di pengaturan VM, terutama terkait driver atau resolusi layar.
-   - **Tampilan Mirip Windows Lama**: ReactOS memberikan pengalaman antarmuka yang sangat mirip dengan Windows 95 atau Windows 2000, yang memberikan kesan nostalgia. Bagi mereka yang familiar dengan Windows klasik, pengalaman ini terasa akrab dan menyenangkan.
-   - **Kompatibilitas Driver**: Di VM, ReactOS biasanya tidak memerlukan driver khusus karena virtualisasi hardware umumnya didukung. Namun, terkadang pengguna perlu menginstal **VirtualBox Guest Additions** untuk meningkatkan kompatibilitas, seperti mendapatkan resolusi layar yang lebih baik atau dukungan clipboard.
+
+* **Booting ke Sistem**: Setelah instalasi selesai, ReactOS biasanya langsung bisa di-boot. Namun, penggila komputer kadang-kadang menemukan **bug kecil atau error** yang mengharuskan mereka untuk melakukan restart VM atau tweak tambahan di pengaturan VM, terutama terkait driver atau resolusi layar.
+* **Tampilan Mirip Windows Lama**: ReactOS memberikan pengalaman antarmuka yang sangat mirip dengan Windows 95 atau Windows 2000, yang memberikan kesan nostalgia. Bagi mereka yang familiar dengan Windows klasik, pengalaman ini terasa akrab dan menyenangkan.
+* **Kompatibilitas Driver**: Di VM, ReactOS biasanya tidak memerlukan driver khusus karena virtualisasi hardware umumnya didukung. Namun, terkadang pengguna perlu menginstal **VirtualBox Guest Additions** untuk meningkatkan kompatibilitas, seperti mendapatkan resolusi layar yang lebih baik atau dukungan clipboard.
 
 ### 4. **Pengujian Aplikasi**
-   - **Aplikasi Windows di ReactOS**: Setelah instalasi, penggila komputer sering menguji kompatibilitas ReactOS dengan berbagai aplikasi Windows. Aplikasi sederhana seperti **Notepad++** atau **WinRAR** umumnya berjalan dengan baik, tetapi aplikasi yang lebih kompleks, terutama yang menggunakan driver atau grafis berat, sering kali mengalami masalah atau tidak berfungsi.
-   - **Tantangan Kompatibilitas**: Meskipun ReactOS bertujuan untuk kompatibel dengan Windows, pengguna sering melaporkan **bug** atau **crash** saat menjalankan aplikasi tertentu. Pengalaman ini menarik bagi mereka yang ingin mengeksplorasi lebih jauh, mencoba memperbaiki masalah, atau melaporkannya ke komunitas.
+
+* **Aplikasi Windows di ReactOS**: Setelah instalasi, penggila komputer sering menguji kompatibilitas ReactOS dengan berbagai aplikasi Windows. Aplikasi sederhana seperti **Notepad++** atau **WinRAR** umumnya berjalan dengan baik, tetapi aplikasi yang lebih kompleks, terutama yang menggunakan driver atau grafis berat, sering kali mengalami masalah atau tidak berfungsi.
+* **Tantangan Kompatibilitas**: Meskipun ReactOS bertujuan untuk kompatibel dengan Windows, pengguna sering melaporkan **bug** atau **crash** saat menjalankan aplikasi tertentu. Pengalaman ini menarik bagi mereka yang ingin mengeksplorasi lebih jauh, mencoba memperbaiki masalah, atau melaporkannya ke komunitas.
 
 ### 5. **Stabilitas dan Performa**
-   - **Masalah Stabilitas**: Karena ReactOS masih dalam tahap **alpha**, penggila komputer sering mengalami crash atau freeze, terutama saat mencoba menjalankan program yang lebih kompleks. Namun, pengalaman ini dianggap sebagai tantangan yang menarik untuk menguji seberapa jauh ReactOS telah berkembang.
-   - **Performa**: Di VM, ReactOS umumnya bekerja dengan sangat ringan. Sistem ini membutuhkan sumber daya yang minim, sehingga cocok untuk diinstal di lingkungan virtual. Pengguna dapat menikmati **boot time cepat** dan **respon yang gesit** pada aplikasi-aplikasi dasar.
+
+* **Masalah Stabilitas**: Karena ReactOS masih dalam tahap **alpha**, penggila komputer sering mengalami crash atau freeze, terutama saat mencoba menjalankan program yang lebih kompleks. Namun, pengalaman ini dianggap sebagai tantangan yang menarik untuk menguji seberapa jauh ReactOS telah berkembang.
+* **Performa**: Di VM, ReactOS umumnya bekerja dengan sangat ringan. Sistem ini membutuhkan sumber daya yang minim, sehingga cocok untuk diinstal di lingkungan virtual. Pengguna dapat menikmati **boot time cepat** dan **respon yang gesit** pada aplikasi-aplikasi dasar.
 
 ### 6. **Kontribusi ke Proyek**
-   - **Feedback dan Debugging**: Pengguna sering memberikan **feedback** tentang bug yang mereka temui selama instalasi di VM. Banyak dari mereka yang melaporkan bug ke komunitas ReactOS, dan beberapa bahkan ikut serta dalam debugging atau coding untuk memperbaiki masalah yang ada.
-   - **Pengujian Versi Harian**: Penggila komputer yang tertarik dengan perkembangan terbaru sering mencoba **daily build** ReactOS di VM mereka. Mereka menikmati mencoba fitur baru atau menguji perbaikan bug, meskipun ini bisa membuat sistem kurang stabil.
+
+* **Feedback dan Debugging**: Pengguna sering memberikan **feedback** tentang bug yang mereka temui selama instalasi di VM. Banyak dari mereka yang melaporkan bug ke komunitas ReactOS, dan beberapa bahkan ikut serta dalam debugging atau coding untuk memperbaiki masalah yang ada.
+* **Pengujian Versi Harian**: Penggila komputer yang tertarik dengan perkembangan terbaru sering mencoba **daily build** ReactOS di VM mereka. Mereka menikmati mencoba fitur baru atau menguji perbaikan bug, meskipun ini bisa membuat sistem kurang stabil.
 
 ### Kesimpulan
+
 Menginstal ReactOS di VM berbasis Windows adalah pengalaman yang menarik, terutama bagi penggila komputer yang tertarik untuk memahami lebih dalam tentang cara kerja sistem operasi mirip Windows. Meski ada tantangan terkait kompatibilitas dan stabilitas, instalasi di VM memungkinkan pengguna untuk mengeksplorasi ReactOS dengan aman tanpa mempengaruhi sistem utama mereka. Bagi banyak penggemar, ini adalah proyek open-source yang menyenangkan untuk diikuti dan berkontribusi.
 
 *Diambil dari ChatGPT dengan kata kunci prompt 'ReactOS'*

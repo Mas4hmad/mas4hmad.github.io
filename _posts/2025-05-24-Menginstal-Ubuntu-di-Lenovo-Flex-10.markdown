@@ -5,13 +5,13 @@ date: 2025-05-24 00:00:00 +0000
 tags: [linux,operating system,experiment]
 ---
 
-### Pengantar
+## Pengantar
 
 Ubuntu merupakan Sistem Operasi sumber terbuka terbesar kedelapan saat ini (24 April 2025) menurut distrowatch. Dengan menggunakan GNOME sebagai Desktop Environment yang telah dimodifikasi, memudahkan pengguna dalam berinteraksi dengan perangkat mereka. Ubuntu menawarkan simplisitas/kesederhanaan dalam menambah pengalaman pengguna, sangat berbeda dengan Windows, namun hampir mirip dengan MacOS. Beberapa elemen seperti panel atas, Dock, jendela untuk satu aplikasi menambah kesederhanaan tanpa mengorbankan kemewahan yang dimiliki oleh Ubuntu.
 
 Saat ini kita akan menginstal Ubuntu di Lenovo Flex 10. butuh pengaturan khusus dengan UEFI agar booting ke sistem operasi Ubuntu tidak bermasalah. Maksud saya, Ubuntu tidak mendukung UEFI 32 bit yang dibutuhkan Lenovo Flex 10. Jika anda tetap ingin menginstalnya, simak langkah-langkah berikut ini.
 
-### Penginstalan
+## Penginstalan
 
 1. Siapkan Ubuntu ISO file [(unduh di sini)](https://ubuntu.com/download/desktop), dan flash drive USB sekitar 8 GB dan jadikan USB bootable, yakni menginstal ventoy [(unduh di sini)](https://www.ventoy.net/en/download.html). Sisipkan ubuntu pada USB tersebut.
 2. boot dengan menekan <kbd>F12</kbd>, pilih Ubuntu. Selesaikan instalasi Ubuntu. Pada tahap ini UEFI boot belum tersedia. namun, kamu bisa mencopot USB drive dan memulai ulang laptopnya.
@@ -22,10 +22,11 @@ Saat ini kita akan menginstal Ubuntu di Lenovo Flex 10. butuh pengaturan khusus 
 
 a. membuka terminal untuk mengunduh bootloader GRUB dari git:
 
--  ketika terminal telah terbuka, ketik ```sudo apt-get update && sudo apt-get install git bison libopts25 libselinux1-dev autogen m4 autoconf help2man libopts25-dev flex libfont-freetype-perl automake autotools-dev libfreetype6-dev texinfo``` untuk menginstal dependensi yang dibutuhkan.
+- ketika terminal telah terbuka, ketik ```sudo apt-get update && sudo apt-get install git bison libopts25 libselinux1-dev autogen m4 autoconf help2man libopts25-dev flex libfont-freetype-perl automake autotools-dev libfreetype6-dev texinfo``` untuk menginstal dependensi yang dibutuhkan.
 - ketik ```git clone git://git.savannah.gnu.org/grub.git``` untuk mengunduh bootloader GRUB.
 - selanjutnya, ketik ```cd grub``` untuk mengubah direktori ke grub.
 - kemudian ketik perintah di bawah untuk eksekusinya, seperti ini:
+
 ```shell
 ./autogen.sh
 ./configure --with-platform=efi --target=i386 --program-prefix=""
@@ -38,6 +39,7 @@ sudo update-grub
 ```
 
 b. membuka terminal untuk mengganti uefi GRUB 64 ke 32 bit dari paket apt:
+
 - ketik ```sudo apt-get update``` untuk memperbarui daftar paket.
 - ketik ```sudo apt-get remove grub-efi-amd64``` untuk menghapus GRUB 64 bit. gunakan flag ```--force-remove``` jika ada peringatan tidak bisa dihapus.
 - ketik ```sudo apt-get install grub-efi-ia32``` untuk menginstal GRUB 32 bit.
@@ -45,7 +47,8 @@ b. membuka terminal untuk mengganti uefi GRUB 64 ke 32 bit dari paket apt:
 <b>Ingat!</b> ketik perintah di atas dengan hati-hati, kalau bisa satu baris untuk satu perintah.karena ini akan mengubah bootloader GRUB yang sudah ada dan akan terjadi kesalahan jika perintah tidak sesuai.
 
 Sekarang, ketika anda memulai ulang tanpa menggunakan usb, anda bisa melihat Ubuntu boot di lenovo flex 10.
-### Kesimpulan
+
+## Kesimpulan
 
 Ubuntu merupakan sistem operasi yang sangat mudah digunakan, namun tidak mendukung UEFI 32 bit yang dibutuhkan Lenovo Flex 10. Jika anda ingin menginstal Ubuntu di Lenovo Flex 10, maka anda harus menggunakan UEFI 64 bit.
 

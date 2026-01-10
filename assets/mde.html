@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/markdown-text-editor.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/markdown-text-editor.min.js"></script>
+
+</head>
+<body>
+
+<input type="file" accept=".md" onchange="openFile(event)"><i class="fa-solid fa-file"></i>
+
+<button class="btn" id="btnDownload" onclick="downloadMD()" disabled>
+  Download .md
+</button>
+
+<form>
+  <textarea class="editor h-48" rows="5"></textarea>
+  <div class="output"></div>
+</form>
+
+<script>
+/* =========================
+   STATE
+========================= */
+let currentFileName = "catatan.md";
+
+/* =========================
+   INIT EDITOR
+========================= */
+const editor = new MarkdownEditor('.editor',{
+  toolbar: ['bold','italic','preview']
+});
+
+const textarea = document.querySelector('.editor');
+
+/* =========================
+   HELPER
+========================= */
+function updateDownloadButton() {
+  const isEmpty = textarea.value.trim().length === 0;
+  document.getElementById("btnDownload").disabled = isEmpty;
+}
+
+/* =========================
+   OPEN FILE
+========================= */
+function openFile(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  currentFileName = file.name;
+
+  const reader = new FileReader();
+  reader.onload = e => {
+    textarea.value = e.target.result;                // 🔥 WAJIB
+    textarea.dispatchEvent(new Event('input'));      // 🔥 SYNC
+    updateDownloadButton();
+  };
+  reader.readAsText(file);
+}
+
+/* =========================
+   DOWNLOAD
+========================= */
+function downloadMD() {
+  const text = textarea.value.trim();
+  if (!text) return;
+
+  if (!confirm(`Simpan file "${currentFileName}"?`)) return;
+
+  const blob = new Blob([text], { type: "text/markdown" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = currentFileName;
+  a.click();
+
+  URL.revokeObjectURL(url);
+}
+
+/* =========================
+   EVENT
+========================= */
+textarea.addEventListener("input", updateDownloadButton);
+</script>
+
+</body>
+
+
+</html>
